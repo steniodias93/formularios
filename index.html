@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário-Base</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Cadastro de DEV's</h1>
+    <P class="subtitulo">Complete suas informações</P>
+
+
+<form action="#">
+    <fieldset class="dados_basicos">
+
+        <div class="esquerda">
+            <label for="nome" id="label_nome">Nome</label>
+            <input type="text" name="nome" id="nome" required autofocus>
+            <label for="email" id="label_email">Email</label>
+            <input type="email" name="nome" id="email" required>
+            
+        </div>
+
+        <div class="direita">
+        <label for="sobrenome" id="label_sobrenome">Sobrenome</label>
+        <input type="text" name="sobrenome" id="sobrenome" required>
+        </div>
+    </fieldset>    
+
+    <fieldset class="vertente">
+        <p>De que lado da aplicação você desenvolve?</p>
+        <label for="front" id="front"> <input type="radio" name="tipo"> <abbr title="O desenvolvedor front-end trabalha com a parte de códigos que geram a parte gráfica, como HTML, CSS e JavaScript.">Front-End </abbr>            </label>
+
+        <label for="back" id="back"> <input type="radio" name="tipo"> <abbr title="Um desenvolvedor back-end cuida dos bastidores, a parte de trás de tudo o que acontece em um site. Isso também envolve banco de dados, segurança, processamento dos dados e outras informações importantes que serão levadas para a frente, ou seja, para o front-end!"> Back-End   </abbr>            </label>
+
+        <label for="full" id="full"> <input type="radio" name="tipo" checked> <abbr title="O desenvolvedor Full-Stack é considerado um  profissional mais completo, pois, como atua tanto com Front-End quanto com Back-End, é capaz de entregar o projeto do início ao fim.">Full Stack </abbr>     </label>
+
+    </fieldset>
+
+    <fieldset class="experiencia">
+
+        <p>Senioridade</p>
+        <select name="escolher" id="escolher">
+        <option value="selecione" selected disabled>Selecione</option>
+        <option value="Desenvolvedor Júnior">Desenvolvedor Júnior</option>
+        <option value="Desenvolvedor Pleno">Desenvolvedor Pleno</option>
+        <option value="Desenvolvedor Sênior">Desenvolvedor Sênior</option>
+        </select>
+
+    </fieldset>
+
+    <fieldset class="tecnologias">
+
+        <p>Selecione as Tecnologias que utiliza:</p> <br>
+        <label for="HTML"><input type="checkbox" name="HTML"> HTML</label>
+        <label for="CSS"><input type="checkbox" name="CSS"> CSS</label>
+        <label for="Javascript"><input type="checkbox" name="Javascript"> Javascript</label>
+        <label for="PHP"><input type="checkbox" name="PHP"> PHP</label>
+        <label for="C#"><input type="checkbox" name="C#"> C#</label>
+        <label for="Python"><input type="checkbox" name="Python"> Python</label>
+        <label for="Java"><input type="checkbox" name="Java"> Java</label>
+
+    </fieldset>
+
+    <fieldset class="mensagem">
+        <p>Conte mais sobre sua experiencia:</p>
+
+        <textarea name="mensagem" id="mensagem" cols="40" rows="10"></textarea>
+    </fieldset>
+
+    <input type="submit" value="Concluído" id="concluido">
+
+        <script src="script.js"></script>
+
+        <!--seção vertente: Pesquisar como clicar na palavra e marcar o radio-->
+</form>    
+
+</body>
+</html>

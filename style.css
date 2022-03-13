@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Cor do botão: rgb(65,48,115) */
+
+body, html{
+    height: 100%vh;
+}
+
+body{
+    background-color: #F1F8FF;
+    color: rgb(16, 36, 121);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    margin: auto;
+}
+
+h1{
+    display: inline-block;
+    margin: 30px 0 0 0;
+    padding: 0 0 0 42%;
+}
+
+p{
+    display: inline-block;
+    text-align: center;
+    padding: 10px 10px 5px 39%;
+    font-weight: bolder;
+}
+
+fieldset{
+    border:none;
+}
+
+.subtitulo{
+    display: inline-block;
+    padding: 10px 43%;
+    text-align: center;
+}
+
+.dados_basicos{
+    padding: 20px 39%;
+    width: 100%;
+    height: 120px;
+    margin: 0;
+}
+
+div.esquerda, div.direita{
+    width: 200px;
+    height: 140px;
+    float: left;
+}
+
+#label_nome, #label_sobrenome{
+    font-weight: bolder;
+}
+
+#label_email{
+    font-weight: bolder;
+    display: block;
+    margin-top: 20px;
+}
+
+#nome, #sobrenome, #email{
+    width: 180px;
+    border-radius: 5px;
+    padding: 3px;
+    box-shadow: 1px 1px 5px 1px #ccc;
+}
+
+.vertente{
+    display: inline-block;
+    margin: 0 0 10px 0;
+    clear: both;
+    padding: 0 0 0 0;
+    width: 100%;
+    height: 100px;
+}
+
+.vertente abbr{
+    text-decoration: none;
+}
+
+#front,#back,#full{
+    display: block;
+    padding: 2px 39%;
+}
+
+.experiencia{
+    display: inline-block;
+    margin: 0;
+    clear: both;
+    padding: 0;
+    width: 100%;
+    height: 80px;
+}
+
+.experiencia select{
+    display: inline-block;
+    margin: 0px 39%;
+    font-weight: bolder;
+    padding: 10px 5px;
+    border-radius: 5px;  
+    box-shadow: 1px 1px 5px 1px #ccc;  
+}
+
+.experiencia option{
+    font-weight: bolder;
+    font-size: 1.1em;
+    color: rgb(16, 36, 121);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tecnologias{
+    display: inline-block;
+    margin: 0;
+    clear: both;
+    padding: 0 0 0 0;
+    width: 100%;
+    height: 80px;
+    margin: 10px 39%;
+}
+
+.tecnologias p{
+    text-align: center;
+    display: inline-block;
+    padding: 20px 0 10px 0;
+    font-weight: bolder;
+}
+
+.tecnologias label{
+    display: inline-block;
+    font-weight: bolder;
+    margin-right: 10px;
+}
+
+input{
+    display: inline;
+    color: rgb(16, 36, 121);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+.mensagem{
+    display: inline-block;
+    margin: 0;
+    clear: both;
+    padding: 0 0 0 0;
+    width: 100%;
+    height: 200px;
+}
+
+.mensagem textarea{ 
+    /*Texto-teste: Meu nome é Stenio Dias e minha experiência como programador por enquanto é somente com projetos pessoais. */
+    display: inline;
+    margin: 10px 39%;
+    padding: 5px 5px;
+    text-indent: 50px;
+    color: rgb(16, 36, 121);
+    text-align: justify;
+    font-weight: 600;
+    font-size: 1.2em;
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px #ccc;
+}
+
+#concluido{
+    background-color: rgb(16, 36, 121);;
+    color: #F1F8FF;
+    display: inline;
+    padding: 2px;
+    box-sizing: content-box;
+    margin: 30px 47%;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px #ccc;
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dados_basicos input:focus, .experiencia option:focus, .mensagem textarea:focus{
+    background-color: #41307318;
+}
+
+.dados_basicos input:hover, .experiencia option:hover, .mensagem textarea:hover{
+    background-color: #41307309;
+}
+
+
